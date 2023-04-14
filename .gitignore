@@ -1,0 +1,5 @@
+build
+app/node_modules
+nodeServer/node_modules
+nodeServer/upload
+nodeServer/node_modules/public

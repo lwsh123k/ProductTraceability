@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+<script defer src="app.js"></script><link href="app.css" rel="stylesheet"></head>
+
+<body>
+    <h1>商品信息存储系统</h1>
+    <br> <label for="name">商品名称:</label> <input type="text" id="name" placeholder="name of the product"></input>
+    <br> <label for="manufacturer">生产厂商:</label> <input type="text" id="manufacturer" placeholder="manufacturer name"></input>
+    <br> <label for="productionDate">生产日期:</label> <input type="date" id="productionDate"></input>
+    <br> <label for="batchNumber">批次编号:</label> <input type="text" id="batchNumber" placeholder="batch number"></input>
+    <br> <label for="productImage">商品图片:</label> <input type="file" id="productImage" accept=".png,.jpeg,.jpg"></input>
+    <br> <label for="secret">保密信息:</label> <input type="text" id="secret" placeholder="Enter secret"></input>
+    <br> <label for="passPhrase">密码:</label> <input type="text" id="passPhrase" placeholder="Enter or scan passphrase"></input>
+
+    <br> <br>
+    
+    <div class="container">
+      <button id="addNewProduct" onclick="App.addNewProduct()">添加新商品</button>
+      <button id="getProductInfo" onclick="App.getProductInfo()">获取指定编号的商品信息</button>
+      <!-- <button id="getAllProductInfo" onclick="App.getAllProductInfo0()">获得所有商品信息</button> -->
+    </div>
+    
+    <br> <br>
+    <!-- <div>
+      <textarea id="textArea" rows="10" cols="50"></textarea>
+      <img id="productDisplay" src="" style="max-width: 500px; max-height: 500px;">
+    </div> -->
+    <!-- <textarea id="textArea" rows="15" cols="100" ></textarea> -->
+    <div class="textAndImg">
+      <div class="left">
+        <textarea id="textArea" rows="10" cols="50"></textarea>
+      </div>
+      <div class="right">
+        <img id="productDisplay" src="" >
+      </div>
+      
+    </div>
+    
+    
+</body>
+</html>
